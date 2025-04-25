@@ -5,7 +5,7 @@ file(GLOB SOURCES "*.c")
 add_executable(c-samples ${SOURCES})
 
 # Link any additional libraries if needed
-# target_link_libraries(my_project some_library)
+# target_link_libraries(c-samples some_library)
 
 # Specify include directories if they are not in the default location
 target_include_directories(c-samples PUBLIC ../include)
