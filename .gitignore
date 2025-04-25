@@ -54,4 +54,11 @@ dkms.conf
 # vscode
 .vscode/
 
-new_thread
+# CMake
+CMakeFiles/
+CMakeCache.txt
+CMakeOutput.log
+CMakeError.log
+
+# Output
+build/
