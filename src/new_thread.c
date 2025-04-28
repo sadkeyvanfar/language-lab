@@ -9,7 +9,7 @@ void* print_message(void* ptr) {
 
 int main() {
     pthread_t thread;
-    char* message = "Hello from the thread!";
+    char* message = "Hello from the thread old one!";
     
     // Create a new thread
     pthread_create(&thread, NULL, print_message, (void*)message);
