@@ -1,2 +1,2 @@
-# c-samples
-Samples of C programing language
+# language-lab
+Samples of different programming languages

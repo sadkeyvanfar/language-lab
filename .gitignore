@@ -62,3 +62,9 @@ CMakeError.log
 
 # Output
 build/
+
+# Ignore all binaries and class files
+**/*.o
+**/*.class
+**/*.exe
+**/*.out
