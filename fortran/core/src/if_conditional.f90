@@ -2,14 +2,8 @@
 program conditional
   implicit none
 
-  ! Declare variables
-  integer :: a, b, c
+  integer :: a = 5, b = 10, c = 15
   logical :: condition
-
-  ! Initialize variables
-  a = 5
-  b = 10
-  c = 15
 
   ! Check if a is less than b and c is greater than a
   ! Operators in Fortran:
