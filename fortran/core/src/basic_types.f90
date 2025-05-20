@@ -20,14 +20,23 @@ program types
   ! Declare a real variable
   real :: height
 
+  ! Declare a boolean variable
+  logical :: is_valid
+
+  ! Declare constants
+  integer, parameter :: weight = 1 
+  real, parameter :: a = 1, b = 1
+
   ! Assign values to the variables
   name = "John Doe"
   age = 30
   height = 5.9
+  is_valid = .true.
 
   ! Print the values of the variables
   print *, "Name: ", name
   print *, "Age: ", age
   print *, "Height: ", height
+  print *, "Is valid: ", is_valid
 
 end program types
