@@ -1,4 +1,6 @@
 ! This program demonstrates the use of different data types in Fortran.
+! use column-major indexing,
+! The Fortran standard allows up to 15 dimensions for arrays.
 
 program array
   implicit none
