@@ -1,5 +1,11 @@
 package ir.kotlin.core
 
+/**
+ * This file demonstrates different ways to define functions in Kotlin.
+ * It includes functions with block bodies, expression bodies, and type inference.
+ * Note: Keep your return types explicit when writing a library
+ */
+
 // function with block body
 fun maxByBlockBody(a: Int, b: Int): Int {
     return if (a > b) a else b
