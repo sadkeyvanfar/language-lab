@@ -1,0 +1,46 @@
+[project]
+name = "core"
+version = "0.1.0"
+description = "core"
+authors = [{name = "Saeid Keyvanfar", email = "sad.keyvanfar@gmail.com"}]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+  "requests",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest",          # testing framework
+  "pytest-cov",      # coverage reports for pytest
+  "black",           # code formatter
+  "isort",           # import sorter
+  "mypy",            # static type checker
+  "flake8",          # style linter
+  "pre-commit",      # git hooks manager
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 88
+target-version = ["py38"]
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+python_version = "3.8"
+strict = true
+check_untyped_defs = true
+disallow_untyped_defs = true
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = ["E203"]
+
+[tool.pytest.ini_options]
+addopts = "--maxfail=5 --disable-warnings -q"
+testpaths = ["tests"]
