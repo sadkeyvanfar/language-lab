@@ -1,6 +1,6 @@
 package ir.kotlin.core
 
-import ir.kotlin.core.Color
+import ir.kotlin.core.Color.*
 
 // conditional are expressions in Kotlin
 fun main() {
@@ -51,9 +51,9 @@ fun main() {
     // when with enum classes
     val colorEnum = Color.RED
     val nameOfEnum = when(colorEnum) {
-        Color.RED, Color.ORANGE, Color.YELLOW -> "warm (red = ${colorEnum.r})"
-        Color.GREEN -> "neutral (green = ${colorEnum.g})"
-        Color.BLUE -> "cold (blue = ${colorEnum.b})"
+        RED, ORANGE, YELLOW -> "warm (red = ${colorEnum.r})"
+        GREEN -> "neutral (green = ${colorEnum.g})"
+        BLUE -> "cold (blue = ${colorEnum.b})"
     }
     println(nameOfEnum)
 
