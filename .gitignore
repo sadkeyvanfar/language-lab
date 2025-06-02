@@ -68,3 +68,6 @@ build/
 **/*.class
 **/*.exe
 **/*.out
+
+# Mac OS
+.DS_Store
