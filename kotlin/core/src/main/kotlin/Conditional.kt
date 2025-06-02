@@ -57,6 +57,41 @@ fun main() {
     }
     println(nameOfEnum)
 
+    // Capturing the subject of a when expression in a variable
+    fun measureColor() = Color.ORANGE
+    fun getWarmthFromSensor() =
+    when (val colorMine = measureColor()) {
+        RED, ORANGE, YELLOW -> "warm (red = ${colorMine.r})"
+        GREEN -> "neutral (green = ${colorMine.g})"
+        BLUE -> "cold (blue = ${colorMine.b}"
+    }
+    
+    // with arbitrary objects
+    fun mix(c1: Color, c2: Color) =
+    when (setOf(c1, c2)) {
+        setOf(RED, YELLOW) -> ORANGE
+        setOf(YELLOW, BLUE) -> GREEN
+        else -> throw Exception("Dirty color")
+    }
+    println(mix(BLUE, YELLOW))
+
+    // Using the when expression without an argument (efficient)
+    fun mixOptimized(c1: Color, c2: Color) =
+    when { // when without argument
+        (c1 == RED && c2 == YELLOW) ||
+        (c1 == YELLOW && c2 == RED) ->
+            ORANGE
+ 
+        (c1 == YELLOW && c2 == BLUE) ||
+        (c1 == BLUE && c2 == YELLOW) ->
+            GREEN
+ 
+        (c1 == BLUE || c2 == BLUE) ->
+            BLUE
+ 
+        else -> throw Exception("Dirty color")
+    }
+
     // when With smart casting
     fun describe(x: Any) = when (x) {
         is String -> "It's a string of length ${x.length}"
