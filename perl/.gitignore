@@ -1,0 +1,22 @@
+# Perl build files
+Makefile
+Makefile.old
+Build
+Build.bat
+_build/
+blib/
+pm_to_blib
+*.o
+*.bs
+*.so
+*.dll
+*.dylib
+
+# Build metadata
+MYMETA.*
+
+# Editor stuff
+*.swp
+*.bak
+*.tmp
+.DS_Store
