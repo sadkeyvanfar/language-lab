@@ -1,0 +1,7 @@
+/.bundle/
+/log/
+/tmp/
+/coverage/
+/spec/reports/
+/*.gem
+/.env

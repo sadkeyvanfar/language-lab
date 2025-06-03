@@ -1,0 +1,7 @@
+source "https://rubygems.org"
+
+ruby '3.4.4' # specify your Ruby version
+
+gem 'rspec'  # testing framework
+
+# Add more gems as needed
