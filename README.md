@@ -4,26 +4,24 @@
 
 ---
 
-## 📖 Overview
+## Overview
 
 **Language Lab** is a curated collection of **simple and educational sample programs** organized by language. It’s designed to help learners explore and compare the **basics of programming syntax and features** across multiple languages.
 
 ---
 
-## 🗂️ Project Structure
-
-
+## Project Structure
 
 Each language folder contains topics such as:
-- 📌 Syntax basics
-- 📥 Input/Output
-- 🔁 Control structures
-- 🧵 Threading or concurrency
-- 📚 System calls (where applicable)
+- Syntax basics
+- Input/Output
+- Control structures
+- Threading or concurrency
+- System calls (where applicable)
 
 ---
 
-## 🎯 Purpose
+## Purpose
 
 - Provide **hands-on learning** through runnable code samples.
 - Act as a **reference or playground** for exploring different programming styles and patterns.
@@ -31,7 +29,7 @@ Each language folder contains topics such as:
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 1. Clone the repository:
    ```bash
@@ -52,45 +50,28 @@ Each language folder contains topics such as:
 
 💡 Each language folder may include its own Makefile, IDE tasks, or build instructions.
 
-## 🧰 Requirements
+## Requirements
 
-- 🔨 C/C++: `gcc`, `clang`, or LLVM toolchain  
-- ☕ Java: JDK 8+  
-- 📐 Fortran: `gfortran` or equivalent, ...  
-- 🧱 `make` or `cmake` for building (where applicable)
-- 🧠 Basic understanding of programming fundamentals  
+- C/C++: `gcc`, `clang`, or LLVM toolchain
+- Java: JDK 8+
+- Fortran: `gfortran` or equivalent, ...
+- `make` or `cmake` for building (where applicable)
+- Basic understanding of programming fundamentals
 
 ---
 
-## 🧪 Samples & Topics
+## Samples & Topics
 
 You’ll find samples grouped under folders like:
 
-- `basic/` – core syntax, types, loops, functions  
-- `io/` – file and console input/output  
-- `threading/` – simple multithreading examples  
-- `syscalls/` – low-level system interactions (C)  
+- `basic/` – core syntax, types, loops, functions
+- `io/` – file and console input/output
+- `threading/` – simple multithreading examples
+- `syscalls/` – low-level system interactions (C)
 
 ---
 
-## 🤝 Contributing
+## License
 
-Want to add a language, improve examples, or write your own sample? Awesome!  
-Just make sure your additions are:
-
-- ✅ Focused and clear  
-- 💬 Commented for readability  
-- 🗃️ Placed in the right subfolder (`src/`, `io/`, etc.)
-
-Open a pull request or raise an issue!
-
----
-
-## 🪪 License
-
-Licensed under the **Apache License**.  
+Licensed under the **Apache License**.
 Feel free to reuse, modify, and share.
-
----
-
-Happy learning! 🧠✨
