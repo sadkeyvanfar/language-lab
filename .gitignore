@@ -71,3 +71,16 @@ build/
 
 # Mac OS
 .DS_Store
+
+.lsp
+.mypy_cache
+.clj-kondo
+.idea/
+*.iml
+*.swp
+*.swo
+*.bak
+*.tmp
+*.log
+*.pid
+*.orig

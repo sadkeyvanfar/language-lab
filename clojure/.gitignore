@@ -1,0 +1,39 @@
+# Ignore compiled class files
+*.class
+
+# Ignore build artifacts
+target/
+out/
+
+# Ignore dependency caches
+/.cpcache/
+/.clojure/
+
+# Ignore REPL history and logs
+repl-history
+repl.log
+
+# Ignore IntelliJ IDEA / Cursive IDE files
+.idea/
+/*.iml
+out/
+
+# Ignore Emacs / Vim swap files
+*~
+.#*
+
+# Ignore Mac system files
+.DS_Store
+
+# Ignore log files
+*.log
+
+# Ignore leiningen local profiles and build info
+.lein-local.profiles
+.lein-deps.cache
+.lein-repl-history
+
+# Ignore deps.edn lock file (optional, you can commit it if you want)
+# deps.lock
+
+.lein-failures
