@@ -1,0 +1,13 @@
+.stack-work
+/dist/
+/dist-newstyle/
+*.hi
+*.o
+*.exe
+*.out
+*.prof
+*.aux
+*.hp
+*.eventlog
+*.lock
+*.cabal

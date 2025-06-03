@@ -1,0 +1,27 @@
+name:                haskell
+version:             0.1.0.0
+license:             LPG-2.0
+author:              "Saeid Keyvanfar"
+maintainer:          "sad.keyvanfar@gmail.com"
+
+executables:
+  haskell-exe:
+    main:             Main.hs
+    source-dirs:      app
+    dependencies:
+      - haskell
+
+dependencies:
+  - base >= 4.7 && < 5
+
+library:
+  source-dirs: src
+
+tests:
+  haskell-test:
+    main:             MyLibTest.hs
+    source-dirs:      test
+    dependencies:
+      - haskell
+      - base
+      - hspec
