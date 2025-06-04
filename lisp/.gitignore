@@ -1,0 +1,11 @@
+*.fasl
+*.x86f
+*.ufsl
+*.dfsl
+*.pfsl
+*.tfsl
+*.cfsl
+*.so
+*.dylib
+*.o
+quicklisp/
