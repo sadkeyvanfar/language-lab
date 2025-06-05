@@ -1,0 +1,9 @@
+name = "core"
+description = "A simple Ada project to demonstrate ada package management."
+version = "0.1.0-dev"
+
+authors = ["Saeid Keyvanfar"]
+maintainers = ["Saeid Keyvanfar <sad.keyvanfar@gmail.com>"]
+licenses = "GPL-3.0-or-later"
+website = ""
+tags = ["ada"]
