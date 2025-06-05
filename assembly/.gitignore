@@ -1,0 +1,6 @@
+# Ignore compiled binaries and object files
+*.o
+*.out
+*.bin
+
+/build
