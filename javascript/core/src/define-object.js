@@ -21,7 +21,7 @@ dog.speak = function () {
 
 console.log(dog.greet()); // generic sound (inherited from person)
 
-// Factory Function (with closures or direct return)
+// Factory Function (with closures or direct return): it's a function that returns a new object.
 function createPersonWithClosure(name) {
   return {
     name,
@@ -34,10 +34,13 @@ function createPersonWithClosure(name) {
 const alice = createPersonWithClosure("Alice");
 console.log(alice.greet()); // Hi, I'm Alice
 
-//Constructors and Prototypes
+// Constructors and Prototypes.
 function PersonConstructor(name) {
   this.name = name;
 }
+
+const personConstructor = new PersonConstructor("Charlie");
+console.log(personConstructor.name); // Charlie
 
 // class Syntax (ES6)
 class Person {
