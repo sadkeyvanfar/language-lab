@@ -21,8 +21,6 @@ if (true) {
 // console.log(b); // ReferenceError: b is not defined
 // console.log(c); // ReferenceError: c is not defined
 
-
-
 // two exceptions: eval and with
 /* eval: allows you to execute a string of JavaScript code in the current scope. due to its dynamic nature, it can lead to security issues and performance problems, so it's generally discouraged in modern JavaScript.
    with: allows you to extend the scope chain for a block of code, but it's generally discouraged due to performance and readability issues */
@@ -42,5 +40,5 @@ const person = { name: "Alice", age: 30 };
 
 with (person) {
   console.log(name); // "Alice"
-  console.log(age);  // 30
+  console.log(age); // 30
 }

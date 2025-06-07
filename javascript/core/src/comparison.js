@@ -21,7 +21,7 @@ console.log(Object.is(0, -0)); // false // Use Object.is to differentiate betwee
 
 console.log([1, 2] === [1, 2]); // false, Two different objects are not equal
 console.log({ a: 1 } === { a: 1 }); // false,
-console.log((x => x * 2 === x * 2));
+console.log((x) => x * 2 === x * 2);
 
 // == The loose equality operator (==) checks for value equality, performing type coercion if necessary
 // if the types are different, it will try to convert them to a common type before comparing

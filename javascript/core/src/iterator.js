@@ -16,9 +16,9 @@ const range = {
         } else {
           return { done: true };
         }
-      }
+      },
     };
-  }
+  },
 };
 
 // using the iterable object in a for...of loop

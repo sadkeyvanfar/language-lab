@@ -7,7 +7,7 @@ const person = {
   age: 30,
   greet() {
     return `Hello, my name is ${this.name} and I am ${this.age} years old.`;
-  }
+  },
 };
 console.log(person.greet()); // Hello, my name is John and I am 30 years old.
 
@@ -27,7 +27,7 @@ function createPersonWithClosure(name) {
     name,
     greet() {
       return `Hi, I'm ${name}`;
-    }
+    },
   };
 }
 

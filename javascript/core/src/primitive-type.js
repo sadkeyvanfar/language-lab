@@ -1,15 +1,13 @@
 // This code demonstrates the use of different primitive types in JavaScript
 "use strict"; // all this code will run in strict mode
 
-
 // strings can be defined using single quotes, double quotes, or backticks (template literals)
 var str = "Hello, World!";
-var str = 'Hello, World!';
+var str = "Hello, World!";
 
 // Template literals allow for string interpolation and multi-line strings
-var nam = 'Saeid keyvanfar'
+var nam = "Saeid keyvanfar";
 var str = `Hello, ${nam}!`;
-
 
 // JavaScript has a single number type, which can represent both integers and floating-point numbers
 var num = 42; // Numbers in JavaScript are always floating-point, even if they look like integers

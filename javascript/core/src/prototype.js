@@ -4,7 +4,7 @@
 
 // factory function to create a Person object
 function Person(name) {
-    this.name = name;
+  this.name = name;
 }
 
 // This method goes on the prototype, not on each instance (memory efficient)
@@ -16,8 +16,6 @@ Person.prototype.sayHello = function () {
   return `Hello, I'm ${this.name}`;
 };
 
-
 const alice = new Person("Saeid");
-
 
 console.log(alice.sayHello()); // Hello, I'm Saeid

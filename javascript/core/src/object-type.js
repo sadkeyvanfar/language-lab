@@ -3,13 +3,13 @@
 // Objects in JavaScript can be of various types, including arrays and functions
 
 var book = {
-    title: "JS",
-    isbn: "978-0596805524",
-    tags: [ "JavaScript", "Programming", "Web Development" ],
-    read: function() {
-        return "Reading the book: " + this.title;
-    }
-}
+  title: "JS",
+  isbn: "978-0596805524",
+  tags: ["JavaScript", "Programming", "Web Development"],
+  read: function () {
+    return "Reading the book: " + this.title;
+  },
+};
 
 console.log("Book title:", book.title); // Accessing properties of an object
 console.log("Book first tag:", book.tags[0]); // Accessing elements in an array property of an object
@@ -22,12 +22,12 @@ console.log("Array first element:", arr[0]); // Accessing elements in an array
 
 // function declaration
 function decFunc() {
-    return "This is a declaration function";
+  return "This is a declaration function";
 }
 
 // function expression or anonymous function
-var expFunc = function() {
-    return "This is a expression function";
+var expFunc = function () {
+  return "This is a expression function";
 };
 
 // Arrow function expression

@@ -6,7 +6,7 @@
 // Variable as Key
 const key = "name";
 const obj = {
-  [key]: "Alice"  // becomes { "name": "Alice" }
+  [key]: "Alice", // becomes { "name": "Alice" }
 };
 
 console.log(obj); // { name: 'Alice' }
@@ -14,7 +14,7 @@ console.log(obj); // { name: 'Alice' }
 // Expression as Key
 const suffix = "Id";
 const user = {
-  ["user" + suffix]: 123
+  ["user" + suffix]: 123,
 };
 
 console.log(user.userId); // 123
@@ -25,7 +25,7 @@ const myIterable = {
     return {
       next() {
         return { done: true };
-      }
+      },
     };
-  }
+  },
 };

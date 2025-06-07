@@ -31,7 +31,6 @@ const updated = { ...user, age: 31 };
 
 console.log(updated); // { name: "Alice", age: 31 }
 
-
 // Rest operator collects individual elements into an array.
 // Rest operator is used in function parameters and destructuring assignments.
 // Rest operator is denoted by `...` before the parameter name in function definitions or destructuring assignments.
@@ -39,19 +38,19 @@ console.log(updated); // { name: "Alice", age: 31 }
 // In Function Parameters
 function logAll(first, ...rest) {
   console.log(first); // 1
-  console.log(rest);  // [2, 3, 4]
+  console.log(rest); // [2, 3, 4]
 }
 
 logAll(1, 2, 3, 4);
 
 // In Array Destructuring
 const [a, ...restArray] = [10, 20, 30, 40];
-console.log(a);     // 10
-console.log(restArray);  // [20, 30, 40]
+console.log(a); // 10
+console.log(restArray); // [20, 30, 40]
 
 // In Object Destructuring
 const userObject = { id: 1, name: "Ali", role: "admin" };
 const { id, ...restObject } = userObject;
 
-console.log(id);   // 1
+console.log(id); // 1
 console.log(restObject); // { name: 'Ali', role: 'admin' }

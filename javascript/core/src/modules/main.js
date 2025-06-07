@@ -3,7 +3,7 @@
 // ES module is alternative to CommonJS, which is used in Node.js.
 
 // main.js module
-import { increment, description } from './counter.js';
+import { increment, description } from "./counter.js";
 
 console.log(increment()); // 1
 console.log(description); // Counter module for incrementing a count value
