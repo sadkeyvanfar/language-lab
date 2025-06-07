@@ -25,7 +25,7 @@ function decFunc() {
     return "This is a declaration function";
 }
 
-// function expression
+// function expression or anonymous function
 var expFunc = function() {
     return "This is a expression function";
 };
