@@ -3,7 +3,7 @@ for (let i = 0; i < 10; i++) {
   console.log("Iteration number: " + i);
 }
 
-let i = 0
+let i = 0;
 while (i < 5) {
   console.log("This will run until i is less than 5: " + i);
   i++;
