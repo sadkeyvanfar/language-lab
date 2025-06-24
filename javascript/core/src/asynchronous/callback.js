@@ -16,7 +16,7 @@ function fetchData(callback) {
     // Simulating an asynchronous operation using setTimeout
   setTimeout(() => {
     callback("Data is ready!"); // this also tun by the main thread
-  }, 1000);
+  }, 1000); // When the timeout expires, the callback is queued, and the event loop runs it.
   console.log("Fetching data... and is not blocked the thread"); // This will log immediately
 }
 
