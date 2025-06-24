@@ -23,3 +23,31 @@ function fetchData(callback) {
 fetchData(result => {
   console.log(result); // prints after 1 sec
 });
+
+// Single callback
+// This function simulates an asynchronous operation that can either succeed or fail.
+// It takes a single callback function that handles both success and error cases.
+// The callback function receives two arguments: an error (if any) and the data (if successful).
+function fetchDataWithErrorHandling(callback) {
+  const shouldFail = Math.random() < 0.5;
+
+  setTimeout(() => {
+    if (shouldFail) {
+      callback(new Error("Failed to fetch data."), null);
+    } else {
+      callback(null, "Here's your data!");
+    }
+  }, 1000);
+}
+
+
+
+// Use the function
+// Single callback handles both success and error
+fetchDataWithErrorHandling((err, data) => {
+  if (err) {
+    console.error("Error:", err.message);
+  } else {
+    console.log("Success:", data);
+  }
+});
