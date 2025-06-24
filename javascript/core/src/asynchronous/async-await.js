@@ -4,7 +4,7 @@
 // improving readability and maintainability.
 // The `async` keyword is used to define an asynchronous function, and the `await` keyword is used to pause the execution of the function until a Promise is resolved or rejected.
 async function fetchData() {
-  return new Promise((resolve) => {
+  return new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve("Data is ready!");
     }, 1000);
@@ -12,8 +12,12 @@ async function fetchData() {
 }
 
 async function main() {
-  const result = await fetchData();
-  console.log(result);
+  try {
+    const result = await fetchData();
+    console.log(result);
+  } catch (err) {
+    console.error("Error:", err.message);
+  }
 }
 
 main();
