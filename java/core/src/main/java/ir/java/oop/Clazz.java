@@ -1,4 +1,4 @@
-package ir.java.basic;
+package ir.java.oop;
 
 /**
  * This class demonstrates a simple Java class structure.
