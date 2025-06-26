@@ -1,4 +1,4 @@
-package ir.java.basic;
+package ir.java.oop;
 
 // Define an interface named Animal
 interface Animal {

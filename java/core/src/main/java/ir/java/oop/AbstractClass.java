@@ -1,4 +1,4 @@
-package ir.java.basic;
+package ir.java.oop;
 
 abstract class Vehicle {
     abstract void start();
