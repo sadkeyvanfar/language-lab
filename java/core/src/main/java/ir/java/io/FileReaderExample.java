@@ -8,10 +8,10 @@ import java.io.InputStreamReader;
  * This class demonstrates how to read a file from the resources directory in a Java application.
  * It uses InputStream to read the file and BufferedReader to process it line by line.
  */
-public class FileReader {
+public class FileReaderExample {
     public static void main(String[] args) {
         // Get the resource as a stream
-        InputStream inputStream = FileReader.class.getClassLoader().getResourceAsStream("input.txt");
+        InputStream inputStream = FileReaderExample.class.getClassLoader().getResourceAsStream("input.txt");
 
         if (inputStream == null) {
             System.out.println("Resource not found!");
