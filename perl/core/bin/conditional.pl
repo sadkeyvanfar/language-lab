@@ -1,4 +1,5 @@
 #!/usr/bin/perl
+use 5.10.0;
 use strict;
 use warnings;
 
@@ -6,6 +7,7 @@ use warnings;
 # Conditional statements allow you to execute code based on certain conditions
 # The main conditional statements in Perl are if, elsif, and else
 # Perl do not have switch-case statements like some other languages, but you can use if-elsif-else for similar functionality
+# given-when is a feature in Perl 5.10 and later that provides a switch-like syntax
 
 
 my $input = 42;
@@ -36,4 +38,13 @@ if ($a == 5 || $b == 3) {
 
 if (!($a > $b)) {
     print "Not greater: \$a is not greater than \$b.\n";
+}
+
+my $fruit = "apple";
+
+given ($fruit) {
+    when ("apple")  { say "It's an apple."; }
+    when ("banana") { say "It's a banana."; }
+    when ("orange") { say "It's an orange."; }
+    default         { say "Unknown fruit."; }
 }
