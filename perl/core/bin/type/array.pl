@@ -23,3 +23,9 @@ print "After adding yellow: @colors\n";
 my $last = pop @colors;
 print "Removed last color: $last\n";
 print "Colors now: @colors\n";
+
+# Iterate over the array
+print "Iterating over colors:\n";
+foreach my $color (@colors) {
+    print "$color\n";
+}
