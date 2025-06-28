@@ -4,7 +4,8 @@ use warnings;
 
 # this script demonstrates how to create a simple object-oriented Perl module as a class.
 # It defines a class `Animal` with a constructor and a method.
-package AnimalClass;
+# a class is a package in Perl that encapsulates data and behavior.
+package Animal;
 
 sub new {
     my ($class, $name) = @_;
