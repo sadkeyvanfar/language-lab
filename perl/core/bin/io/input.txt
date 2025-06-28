@@ -1,0 +1,5 @@
+this just tests the input file
+this includes some texts and some numbers
+1
+2
+and this is the end of the file
