@@ -5,6 +5,8 @@ use warnings;
 # This script demonstrates the use of typeglobs in Perl.
 # Typeglobs allow you to access all types of a symbol (scalar, array, hash, subroutine, etc.) using a single name.
 # Typeglobs are often used in dynamic programming scenarios, such as when you want to pass around references to different types of data.
+# Typeglobs give raw access to Perl's symbol table, which is powerful but dangerous if misused.
+# They were more common in older Perl, before references and Exporter made safer alternatives.
 
 our $foo = "scalar";
 our @foo = ("a", "b", "c");
