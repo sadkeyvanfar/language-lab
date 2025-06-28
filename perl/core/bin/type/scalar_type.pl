@@ -8,6 +8,7 @@ use warnings;
 
 # Numeric Scalars
 # Perl supports both integers and floating-point numbers as scalar types.
+# my is used to declare a scalar variable. like var in other languages.
 my $integer = 42; # an integer
 print "Integer: $integer\n";
 
