@@ -6,6 +6,7 @@ use warnings;
 # A closure is a subroutine that captures the lexical variables from its surrounding scope.
 # It allows the subroutine to maintain state between calls.
 # This example creates a simple counter using a closure.
+# its purpose is to demonstrate how closures can be used to encapsulate state. specially, in a class-like manner.
 sub make_counter {
     my $count = 0;
 

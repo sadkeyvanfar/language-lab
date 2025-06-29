@@ -5,6 +5,9 @@ use warnings;
 # this script demonstrates how to create a simple object-oriented Perl module as a class.
 # It defines a class `Animal` with a constructor and a method.
 # a class is a package in Perl that encapsulates data and behavior.
+# Classes in perl do not have access modifiers like public, private, or protected.
+# Instead, all attributes and methods are accessible from outside the class.
+#you can use closure to encapsulate state in a class-like manner.
 package Animal;
 
 sub new {
