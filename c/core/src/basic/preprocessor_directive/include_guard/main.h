@@ -1,3 +1,4 @@
+// file inclusion macro
 #include <stdio.h>
 #include "signal.h"
 #include "signal.h" // Including the header file twice to demonstrate the include guard
