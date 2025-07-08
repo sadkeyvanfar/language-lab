@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+// Macro definition example in C
+// This code demonstrates how to define and use macros in C.
+// Macros are preprocessor directives that allow you to define constants or functions
+// that can be used throughout your code without the need for function calls or variable declarations.
+
 // simple constant macro definition
 #define PI 3.14
 
