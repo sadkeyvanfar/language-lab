@@ -18,4 +18,25 @@ int main() {
     *p = 100;  // change the value at the address p points to (modifies x)
     printf("New value of x: %d\n", x);     // prints 100
 
+    // Demonstrating pointer to an array
+    int arr[] = {1, 2, 3, 4, 5};
+    int *arr_ptr = arr; // pointer to the first element of the array
+    printf("First element of arr: %d\n", *arr_ptr); // prints 1
+    printf("Second element of arr: %d\n", *(arr_ptr + 1)); // prints 2
+    printf("Third element of arr: %d\n", *(arr_ptr + 2)); // prints 3
+
+    // Demonstrating pointer to a structure
+    struct Point { int x, y; };
+    struct Point p = {1, 2};
+    struct Point *ptr = &p;
+
+    printf("%d\n", ptr->x);  // use -> for accessing members via pointer
+
+    // Demonstrating pointer to a pointer
+    int a = 5;
+    int *p = &a;
+    int **pp = &p;
+
+    printf("%d\n", **pp);
+
 }
