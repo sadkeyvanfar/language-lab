@@ -16,7 +16,7 @@
  * To run the program, use the following command:
  * ./new_thread
  * This will execute the program and print the message from the thread to the console.
- * The output will be: 
+ * The output will be:
  * Hello from the thread!
  * This example can be extended to include more complex thread management and synchronization techniques.
  */
