@@ -15,14 +15,14 @@
 
 #pragma  optimize("O2") // Sets optimization level to O2
 
+// The following function is unused, but it won't generate a warning due to the pragma directive
+void unused_function() {
+    printf("This function is unused.\n");
+}
+
 int main() {
     int unused_variable = 42; // This will not generate a warning due to the pragma directive
     printf("Hello, World!\n");
-
-    // The following function is unused, but it won't generate a warning due to the pragma directive
-    void unused_function() {
-        printf("This function is unused.\n");
-    }
 
     return 0;
 }
