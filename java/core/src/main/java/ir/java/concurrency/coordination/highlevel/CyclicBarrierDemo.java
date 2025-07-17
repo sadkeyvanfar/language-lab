@@ -1,5 +1,7 @@
 package ir.java.concurrency.coordination.highlevel;
 
+import java.util.concurrent.CyclicBarrier;
+
 /**
  * This class demonstrates the use of CyclicBarrier in Java.
  * It creates multiple threads that perform some work and then wait at a barrier
@@ -11,7 +13,7 @@ public class CyclicBarrierDemo {
 
     public static void main(String[] args) {
         // Example usage of CyclicBarrier
-        java.util.concurrent.CyclicBarrier barrier = new java.util.concurrent.CyclicBarrier(THREAD_COUNT, () -> {
+        CyclicBarrier barrier = new CyclicBarrier(THREAD_COUNT, () -> {
             System.out.println("All threads have reached the barrier, proceeding with the next step.");
         });
 
