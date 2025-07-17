@@ -10,7 +10,7 @@ import java.util.concurrent.locks.Condition;
  * when the buffer is full
  * and the consumer waits when the buffer is empty.
  */
-public class ConditionDemo {
+public class ReentrantLockWithConditionDemo {
     private int item;
     private boolean hasItem = false;
 
@@ -48,7 +48,7 @@ public class ConditionDemo {
     }
 
     public static void main(String[] args) {
-        ConditionDemo buffer = new ConditionDemo();
+        ReentrantLockWithConditionDemo buffer = new ReentrantLockWithConditionDemo();
 
         Thread producer = new Thread(() -> {
             for (int i = 0; i < 5; i++) {
