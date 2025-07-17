@@ -1,4 +1,4 @@
-package ir.java.concurrency.thread;
+package ir.java.concurrency.lifecycle;
 
 import java.lang.Thread;
 
