@@ -1,4 +1,4 @@
-package ir.java.concurrency.cordination.lock;
+package ir.java.concurrency.coordination.lock;
 
 import java.util.concurrent.locks.ReentrantLock;
 

@@ -1,4 +1,4 @@
-package ir.java.concurrency.cordination.lock;
+package ir.java.concurrency.coordination.lock;
 
 /*
  * This class demonstrates the use of explicit locking in Java using a synchronized block.

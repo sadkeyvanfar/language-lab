@@ -1,4 +1,4 @@
-package ir.java.concurrency.cordination.condition;
+package ir.java.concurrency.coordination.condition;
 
 public class BufferByWaitNotify {
     private int item;
