@@ -3,7 +3,14 @@ package ir.java.concurrency.coordination.condition;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.concurrent.locks.Condition;
 
-public class BufferByCondition {
+/**
+ * This class demonstrates the use of ReentrantLock and Condition for thread
+ * coordination in Java.
+ * It provides methods to put and get items, ensuring that the producer waits
+ * when the buffer is full
+ * and the consumer waits when the buffer is empty.
+ */
+public class ConditionDemo {
     private int item;
     private boolean hasItem = false;
 
@@ -41,7 +48,7 @@ public class BufferByCondition {
     }
 
     public static void main(String[] args) {
-        BufferByCondition buffer = new BufferByCondition();
+        ConditionDemo buffer = new ConditionDemo();
 
         Thread producer = new Thread(() -> {
             for (int i = 0; i < 5; i++) {

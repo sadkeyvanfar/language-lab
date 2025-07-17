@@ -9,7 +9,7 @@ import java.util.concurrent.Semaphore;
  * can increment the count at a time, similar to a mutex.
  */
 
-public class SemaphoreCounter {
+public class SemaphoreDemo {
     private int count = 0;
     private final Semaphore semaphore = new Semaphore(3); // if it was 1 = Binary semaphore = mutex
 
@@ -37,7 +37,7 @@ public class SemaphoreCounter {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        SemaphoreCounter counter = new SemaphoreCounter();
+        SemaphoreDemo counter = new SemaphoreDemo();
 
         // Create 2 threads that increment the counter 1000 times
         Thread t1 = new Thread(() -> {

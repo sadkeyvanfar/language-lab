@@ -1,6 +1,13 @@
 package ir.java.concurrency.coordination.condition;
 
-public class BufferByWaitNotify {
+/**
+ * This class demonstrates the use of wait and notify for thread coordination in
+ * Java.
+ * It provides methods to put and get items, ensuring that the producer waits
+ * when the buffer is full
+ * and the consumer waits when the buffer is empty.
+ */
+public class WaitNotifyDemo {
     private int item;
     private boolean hasItem = false;
 
@@ -25,7 +32,7 @@ public class BufferByWaitNotify {
     }
 
     public static void main(String[] args) {
-        BufferByWaitNotify buffer = new BufferByWaitNotify();
+        WaitNotifyDemo buffer = new WaitNotifyDemo();
 
         Thread producer = new Thread(() -> {
             for (int i = 0; i < 5; i++) {

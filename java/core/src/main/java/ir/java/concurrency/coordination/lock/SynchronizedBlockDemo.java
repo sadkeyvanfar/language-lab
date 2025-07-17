@@ -5,7 +5,7 @@ package ir.java.concurrency.coordination.lock;
  * The increment method uses a synchronized block to ensure that only one thread can
  * execute it at a time, while allowing more flexibility in locking.
  */
-public class SynchronizedBlock {
+public class SynchronizedBlockDemo {
     private int count = 0;
     private final Object lock = new Object(); // the lock object
 
@@ -22,7 +22,7 @@ public class SynchronizedBlock {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        SynchronizedBlock counter = new SynchronizedBlock();
+        SynchronizedBlockDemo counter = new SynchronizedBlockDemo();
 
         Thread t1 = new Thread(() -> {
             for (int i = 0; i < 1000; i++) {

@@ -2,7 +2,13 @@ package ir.java.concurrency.coordination.highlevel;
 
 import java.util.concurrent.CountDownLatch;
 
-public class CountDownLatchExample {
+/**
+ * This class demonstrates the use of CountDownLatch for thread coordination in
+ * Java.
+ * It allows one or more threads to wait until a set of operations being
+ * performed in other threads completes.
+ */
+public class CountDownLatchDemo {
     private static final int WORKER_COUNT = 2;
 
     public static void main(String[] args) throws InterruptedException {

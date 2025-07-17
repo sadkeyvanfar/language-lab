@@ -3,12 +3,15 @@ package ir.java.concurrency.async;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.TimeUnit;
 
-// A simple example of using CompletableFuture with a callback mechanism
-// to handle asynchronous operations in Java.
-// This example simulates fetching data from a server, processing it, and handling errors.
-// It demonstrates how to chain operations and handle exceptions in a clean way.
-// its equivalent to using callback or Promise in JavaScript or other languages.
-public class CompletableFutureCallback {
+/**
+ * Demonstrates the use of CompletableFuture for asynchronous programming in
+ * Java. based on callback mechanism
+ * This example fetches data asynchronously, processes it, and handles any
+ * potential errors.
+ * It demonstrates how to chain operations and handle exceptions in a clean way.
+ * its equivalent to using callback or Promise in JavaScript or other languages.
+ */
+public class CompletableFutureDemo {
 
     public static void main(String[] args) {
         CompletableFuture.supplyAsync(() -> {

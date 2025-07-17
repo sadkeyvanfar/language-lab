@@ -1,9 +1,15 @@
 package ir.java.concurrency.thread;
 
+import java.util.concurrent.Callable;
 import java.util.concurrent.FutureTask;
 import java.lang.Thread;
 
-public class Callable implements java.util.concurrent.Callable<String> {
+/**
+ * A simple example of using Callable in Java.
+ * This class implements Callable and overrides the call method.
+ * The call method contains the code that will be executed by the thread.
+ */
+public class CallableDemo implements Callable<String> {
     @Override
     public String call() {
         // Code that will be executed by this thread
@@ -13,7 +19,7 @@ public class Callable implements java.util.concurrent.Callable<String> {
 
     public static void main(String[] args) throws Exception {
         // Wrap Callable in a FutureTask
-        FutureTask<String> futureTask = new FutureTask<>(new Callable());
+        FutureTask<String> futureTask = new FutureTask<>(new CallableDemo());
 
         // Start the thread
         Thread thread = new Thread(futureTask);

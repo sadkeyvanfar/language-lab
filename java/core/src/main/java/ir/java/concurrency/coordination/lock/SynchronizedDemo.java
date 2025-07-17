@@ -1,32 +1,26 @@
 package ir.java.concurrency.coordination.lock;
 
-import java.util.concurrent.locks.ReentrantLock;
-
-public class ExplicitLock {
+/*
+ * This class demonstrates the use of implicit locking in Java.
+ * The increment method is synchronized, which means it will lock the instance
+ * of ImplicitLock when accessed by a thread, ensuring that only one thread can
+ * execute it at a time.
+ */
+public class SynchronizedDemo {
     private int count = 0;
-    private final ReentrantLock lock = new ReentrantLock(); // explicit lock
 
-    public void increment() {
-        lock.lock(); // acquire the lock
-        try {
-            count++; // critical section
-        } finally {
-            lock.unlock(); // always release in finally block
-        }
+    public synchronized void increment() {
+        count++; // critical section
     }
 
-    public int getCount() {
-        lock.lock();
-        try {
-            return count;
-        } finally {
-            lock.unlock();
-        }
+    public synchronized int getCount() {
+        return count;
     }
 
     public static void main(String[] args) throws InterruptedException {
-        ExplicitLock counter = new ExplicitLock();
+        SynchronizedDemo counter = new SynchronizedDemo();
 
+        // Create 2 threads that increment the counter 1000 times
         Thread t1 = new Thread(() -> {
             for (int i = 0; i < 1000; i++) {
                 counter.increment();

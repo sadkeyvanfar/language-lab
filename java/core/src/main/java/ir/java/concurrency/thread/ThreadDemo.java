@@ -1,10 +1,13 @@
 package ir.java.concurrency.thread;
 
+import java.lang.Thread;
+
 /**
  * This class demonstrates the creation and management of threads in Java.
- * It extends the Thread class and overrides the run method to define the thread's behavior.
+ * It extends the Thread class and overrides the run method to define the
+ * thread's behavior.
  */
-public class Thread extends java.lang.Thread {
+public class ThreadDemo extends Thread {
 
     @Override
     public void run() {
@@ -13,7 +16,7 @@ public class Thread extends java.lang.Thread {
     }
 
     public static void main(String[] args) {
-        Thread thread = new Thread();
+        ThreadDemo thread = new ThreadDemo();
         thread.start(); // Start the thread
     }
 
