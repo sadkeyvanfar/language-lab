@@ -7,6 +7,14 @@ import java.util.concurrent.CountDownLatch;
  * Java.
  * It allows one or more threads to wait until a set of operations being
  * performed in other threads completes.
+ *
+ * The main thread will wait for two worker threads to finish their tasks
+ * before proceeding.
+ * Each worker simulates some work by sleeping for a short duration.
+ * After completing their work, they call countDown on the latch to signal that
+ * they are done.
+ * The main thread uses await on the latch to block until all workers have
+ * finished.
  */
 public class CountDownLatchDemo {
     private static final int WORKER_COUNT = 2;
