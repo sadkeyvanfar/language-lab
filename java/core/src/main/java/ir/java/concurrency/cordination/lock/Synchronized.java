@@ -1,4 +1,4 @@
-package ir.java.concurrency.lock;
+package ir.java.concurrency.cordination.lock;
 
 /*
  * This class demonstrates the use of implicit locking in Java.

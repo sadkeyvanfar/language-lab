@@ -1,4 +1,4 @@
-package ir.java.concurrency.lock;
+package ir.java.concurrency.cordination.highlevel;
 
 import java.util.concurrent.Semaphore;
 

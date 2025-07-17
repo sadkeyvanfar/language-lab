@@ -1,31 +1,28 @@
-package ir.java.concurrency.lock;
+package ir.java.concurrency.cordination.lock;
 
-import java.util.concurrent.locks.ReentrantLock;
-
-public class ExplicitLock {
+/*
+ * This class demonstrates the use of explicit locking in Java using a synchronized block.
+ * The increment method uses a synchronized block to ensure that only one thread can
+ * execute it at a time, while allowing more flexibility in locking.
+ */
+public class SynchronizedBlock {
     private int count = 0;
-    private final ReentrantLock lock = new ReentrantLock(); // explicit lock
+    private final Object lock = new Object(); // the lock object
 
     public void increment() {
-        lock.lock(); // acquire the lock
-        try {
+        synchronized (lock) {
             count++; // critical section
-        } finally {
-            lock.unlock(); // always release in finally block
         }
     }
 
     public int getCount() {
-        lock.lock();
-        try {
+        synchronized (lock) {
             return count;
-        } finally {
-            lock.unlock();
         }
     }
 
     public static void main(String[] args) throws InterruptedException {
-        ExplicitLock counter = new ExplicitLock();
+        SynchronizedBlock counter = new SynchronizedBlock();
 
         Thread t1 = new Thread(() -> {
             for (int i = 0; i < 1000; i++) {

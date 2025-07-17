@@ -1,4 +1,4 @@
-package ir.java.concurrency.condition;
+package ir.java.concurrency.cordination.condition;
 
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.concurrent.locks.Condition;
