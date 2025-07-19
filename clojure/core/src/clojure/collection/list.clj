@@ -1,5 +1,5 @@
 ;;;; ==========================
-;;;; Clojure list collection sample
+;;;; Clojure list sample
 ;;;; ==========================
 
 (ns clojure.collection.list)
