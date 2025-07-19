@@ -25,7 +25,8 @@
 (def message "Hello, Clojure!")
 (println "String:" message)
 
-;;; --- Characters ---
+;;; --- Characters --- Characters are single Unicode characters in Clojure.
+;; Characters are represented by a backslash followed by the character.
 (def char-val \C)
 (println "Character:" char-val)
 
@@ -36,6 +37,7 @@
 (println "Boolean false:" bool-false)
 
 ;;; --- Nil (represents absence of value) ---
+;; In Clojure, nil is used to represent the absence of a value. like null in other languages.
 (def no-value nil)
 (println "Nil value:" no-value)
 
@@ -46,20 +48,3 @@
 ;;; --- Symbols (used for variable/function names) ---
 (def s 'my-symbol)
 (println "Symbol:" s)
-
-;;; --- Lists (linked list, used for code and data) ---
-(def my-list '(1 2 3 4))
-(println "List:" my-list)
-
-;;; --- Vectors (indexed, like arrays) ---
-(def my-vector [1 2 3 4])
-(println "Vector:" my-vector)
-
-;;; --- Maps (key-value pairs) ---
-(def my-map {:name "Alice" :age 30})
-(println "Map:" my-map)
-(println "Name from map:" (:name my-map)) ; keyword lookup
-
-;;; --- Sets (unique values) ---
-(def my-set #{1 2 3})
-(println "Set (no duplicates):" my-set)
