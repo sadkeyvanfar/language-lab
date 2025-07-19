@@ -1,4 +1,4 @@
-(ns clojure.misc.data-types-demo)
+(ns clojure.basic.data-type)
 
 ;;;; ==========================
 ;;;; Clojure Data Types Sample
@@ -6,12 +6,18 @@
 
 ;;; --- Numbers ---
 (def int-val 42)               ; Integer
+(def long-val 123) ; Long (64-bit integer)
 (def float-val 3.14)           ; Floating-point number
+(def double-val 2.71828)      ; Double-precision floating-point number
+(def big-decimal 1.23456789012345678901234567890M) ; BigDecimal (arbitrary precision decimal)
 (def ratio-val 22/7)           ; Ratio
 (def big-int 12345678901234567890N) ; BigInt (arbitrary precision)
 
 (println "Integer:" int-val)
+(println "Long:" long-val)
 (println "Float:" float-val)
+(println "Double:" double-val)
+(println "BigDecimal:" big-decimal)
 (println "Ratio:" ratio-val)
 (println "BigInt:" big-int)
 
