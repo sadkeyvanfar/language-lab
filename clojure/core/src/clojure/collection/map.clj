@@ -10,6 +10,10 @@
 (def my-map {:name "Alice" :age 30 :city "Wonderland"})
 (println "Map:" my-map)
 
+;; You can also create a map using the hash-map function.
+(def another-map (hash-map :a 1 :b 2 :c 3)) ; Creating a map using hash-map
+(println "Another map:" another-map)
+
 ;;; --- Accessing values in a map ---
 ;; You can access values in a map using the get function or by keyword.
 (println "Name from map:" (:name my-map)) ; Accessing value by keyword
