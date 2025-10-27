@@ -21,8 +21,13 @@ dog.speak = function () {
 
 console.log(dog.greet()); // generic sound (inherited from person)
 
+
+// ----------------------------------------------------------------
 // Factory Function (with closures or direct return): it's a function that returns a new object.
 function createPersonWithClosure(name) {
+
+  let name = name; // private variable via closure
+
   return {
     name,
     greet() {
@@ -34,17 +39,32 @@ function createPersonWithClosure(name) {
 const alice = createPersonWithClosure("Alice");
 console.log(alice.greet()); // Hi, I'm Alice
 
+// ----------------------------------------------------------------
 // Constructors and Prototypes.
-function PersonConstructor(name) {
+function Person(name, age) {
   this.name = name;
+  this.age = age;
 }
 
-const personConstructor = new PersonConstructor("Charlie");
-console.log(personConstructor.name); // Charlie
+Person.prototype.greet = function() {
+  return `Hi, I'm ${this.name}`;
+};
 
-// class Syntax (ES6)
+const p = new Person("Alice", 25);
+console.log(p.greet()); // "Hi, I'm Alice"
+
+
+// class Syntax (ES6), suggar over prototype-based inheritance.
 class Person {
   constructor(name) {
+    this.name = name;
+  }
+
+  get getName() {
+    return this.name;
+  }
+
+  set setName(name) {
     this.name = name;
   }
 

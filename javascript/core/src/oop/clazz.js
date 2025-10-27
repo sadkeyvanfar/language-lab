@@ -6,6 +6,22 @@ class Person {
     this.age = age;
   }
 
+  get getName() {
+    return this.name;
+  }
+
+  set setName(name) {
+    this.name = name;
+  }
+
+  get getAge() {
+    return this.age;
+  }
+
+  set setAge(age) {
+    this.age = age;
+  }
+
   greet() {
     return `Hello, my name is ${this.name} and I am ${this.age} years old.`;
   }
